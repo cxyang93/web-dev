@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+
+}
+.top {
+    background-color: rgb(127, 127, 140);
+    height: 100px;
+}
+
+.topcontent {
+    margin: auto;
+    background-color: red;
+    width: 1200px;
+    height: 100px;
+}
+
+.topcontent div {
+    height: 100px;
+    float: left;
+}
+
+.topcontent #logo {
+    float: left;
+    padding-top: 23px;
+    display: block;
+}
+
+.topcontent a {
+    display: block;
+    /* height: 100px; */
+    padding: 40px 30px 40px 30px;
+    font: 20px times black;
+    float: left;
+}
+
+.topcontent a:hover {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.topcontent input,
+button {
+    display: block;
+    font: 20px times black;
+    float: left;
+    margin-top: 40px;
+
+}
+
+.box1 {
+    height: 300px;
+    background-color: blue;
+}
+
+/* .box1 div {
+    height: 300px;
+    width: 1200px;
+} */
+
+.box1content {
+    height: 300px;
+    width: 1200px;
+}
+.box1 .box1content .box1right {
+    height: 300px;
+    width: 400px;
+    background-color: rgba(0, 0, 0, .6);
+} 
+
+.box1 .box1content .box1right div {
+    height: 32px;
+    font: 16px times rgb(5, 4, 4);
+    line-height: 32px;
+    margin-left: 10px;
+    color: aliceblue;
+}

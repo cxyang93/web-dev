@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boxfloat2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .Outerbox {
+            margin: 20px auto;
+            width: 1226px;
+            height: 615px;
+            background-color: grey;
+        }
+
+        .Outerbox .leftbox {
+            float: left;
+            width: 234px;
+            height: 615px;
+            background-color: pink;
+        }
+
+        .Outerbox .rightbox {
+            float: right;
+            width: 992px;
+            height: 615px;
+            background-color: blueviolet;
+            padding: 0px 0px 0px 0px;
+        }
+        .Outerbox .rightbox .inrightbox {
+            float: left;
+            width: 234px;
+            height: 300px;
+            background-color: rgb(227, 221, 221);
+            list-style: none;
+            margin: 0px 0px 15px 14px;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <div class="Outerbox">
+        <div class="leftbox"></div>
+        <div class="rightbox">
+            <div class="inrightbox"></div>
+            <div class="inrightbox"></div>
+            <div class="inrightbox"></div>
+            <div class="inrightbox"></div>
+            <div class="inrightbox"></div>
+            <div class="inrightbox"></div>
+            <div class="inrightbox"></div>
+            <div class="inrightbox"></div>
+
+        </div>
+        
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.relative {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    top: 20px;
+    left: 100px;
+    background-color: blue;
+}
+
+.box1 {
+    width: 400px;
+    height: 400px;
+    background-color: blueviolet;
+}
+
+.father {
+    margin: auto;
+    margin-top: 100px;
+    width: 900px;
+    height: 600px;
+    position: relative;
+    background-color: aqua;
+}
+
+.father .son {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    background-color: yellowgreen;
+}
+
+.fixed  {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 200px;
+    left: 200px;
+    background-color: rgb(61, 153, 51);
+}
+
+.fixed2 {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    margin-left: 455px;
+    background-color: red;
+}
+
+.stickybox {
+    width: 900px;
+    height: 200px;
+    margin: 200px auto;
+    position: sticky;
+    top: 0px;
+    background-color: deepskyblue;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+}
+
+.xiongda {
+    background-color: red;
+    z-index: 2;
+}
+.xionger {
+    background-color: blue;
+    margin-top: 50px;
+    margin-left: 50px;
+    z-index: 1;
+}
+
+.guangtouqiang {
+    background-color: yellow;
+    margin-top: 100px;
+    margin-left: 100px;
+    z-index: 3;
+}
+
+.Mid {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    background-color: black;
+    color: white;
+    z-index: 100;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .box {
+            margin: 10px auto;
+            width: 400px;
+            height: 600px;
+            position: relative;
+            background-color: pink;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, .3);
+        }
+        .upperbox {
+            /* float:left; */
+            width: 400px;
+            height: 300px;
+            position: relative;
+            background-color: red;
+        }
+
+        .upperbox img{
+            /* float: left; */
+            width: 400px;
+            height: 300px;
+            /* position: absolute; */
+            top: 0;
+            left: 0;
+        }
+
+        .upperbox .hidden {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 400px;
+            height: 300px;
+            background-color: rgba(0, 0, 0, .3);
+        }
+
+        .upperbox:hover .hidden {
+            display: block;
+        }  
+
+        .upperbox a {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+        /* .upperbox span a {
+            display:hidden;
+        } */
+        
+            /* .upperbox span a :hover {
+                display: block;
+                z-index: 4;
+                position: absolute;
+                left: 50%;
+                top: 50%
+            } */
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="upperbox">
+            <img src="../pic1.jpeg" alt="img">
+            <div class="hidden">
+                where is this
+                 <a href="#"><img src="play.png" alt="play"></a>
+            </div>
+        </div>
+        <!-- <div class="lowerbox">lowerbox</div> -->
+
+
+    </div>
+</body>
+</html>
