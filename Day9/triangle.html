@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle</title>
+    <style>
+        .box{
+            margin: 10px auto;
+            height: 0;width: 0;
+            line-height: 0;
+            font-size: 0;
+            border-top: 10px solid red;
+            border-bottom: 10px solid blue;
+            border-right: 10px solid green;
+            border-left: 10px solid yellow;
+
+        }
+        .triangle {
+            width: 0;
+            height: 0;
+            border: 20px solid;
+            border-color: transparent;
+            border-right-color: black;
+            margin-top: 20px;
+        }
+
+        .jd {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: auto;
+            margin-top: 100px;
+            background-color: deepskyblue;
+        }
+        .jd span {
+            position: absolute;
+             top:-40px;
+             left: 155px;
+             width: 0;
+            height: 0;
+            line-height: 0;
+            font-size: 0; 
+            border: 20px solid transparent; 
+            border-bottom-color: deeppink;
+        }
+    </style>
+</head> 
+<body>
+    <div class="box"></div>
+    <div class="triangle"></div>
+    <div class="jd">
+        <span class="triangle2">where is this</span>
+    </div>
+</body>
+</html>

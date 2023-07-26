@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 0;height: 0;
+            border-top: 100px solid transparent;
+            border-right: 50px solid red;
+    
+        }
+
+        .price {
+            width: 160px;height: 24px;
+            border: 1px solid red;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 24px;
+        }
+
+        .bargin {
+            position: relative;
+            float: left;
+            width: 90px;
+            height: 100%;
+            background-color: red;
+            color: white;
+            font-weight: 700;
+        }
+
+        .bargin i{
+            position: absolute;
+            width: 0;height: 0;
+            border-color: transparent transparent white transparent;
+            border-style: solid;
+          
+            border-width: 0 0 24px 10px; 
+            right: 0;
+            top: 0;
+        }
+
+        .origin {
+            color: grey;
+            text-decoration: line-through;
+            font-size: 12px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+
+    <div class="price">
+        <span class="bargin">1540$
+            <i></i>
+        </span>
+        <span class="origin">5650$</span>
+    </div>
+</body>
+</html>

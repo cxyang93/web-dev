@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            overflow: hidden;
+            position: relative;
+            width: 50px;
+            height: 50px;
+            background-color: pink;
+        }
+
+        .box2 {
+            position: absolute;
+            left: 0;
+            width: 100px;
+            height: 50px;
+            background-color: blue;
+            transition: all 1s;
+        }
+
+        .box2:hover {
+            /* width: 120px; */
+            left: -50px;
+        }
+
+        .box2 img {
+            float: left;
+            width: 50px;
+            height: 50px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2">
+            <img src="xiaomi1.png" alt="1">
+            <img src="xiaomi2.png" alt="2">
+
+        </div>
+
+    </div>
+</body>
+</html>

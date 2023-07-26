@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li {
+            font-size: 20px;
+        }
+        input {
+            outline: none;
+        } 
+
+        textarea {
+            resize: none;
+            outline: none;
+            vertical-align: middle;
+            margin-right: 20px; 
+        }
+
+        img {
+            margin: 20px;
+            vertical-align: middle;
+        }
+
+        /* .Remove {
+            margin-top:20px;
+            border:  1px solid black;
+            
+        } */
+
+        .Remove img {
+            display: inline-block;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Different cursor appearence -->
+    <ul>
+        <li style="cursor: defaut;">Cursor type defaut</li>
+        <li style="cursor: pointer;">Cursor type pointer</li>
+        <li style="cursor: move;">Cursor type move</li>
+        <li style="cursor: text;">Cursor type text</li>
+        <li style="cursor: not-allowed;">Cursor type stop</li>
+    </ul>
+    <!-- input box with no outline -->
+    <input type="text" name="input" value="Please enter">
+
+    <!-- Remove textarea resizing property -->
+    <textarea name="Area" id="area" cols="30" rows="10"></textarea>
+<br>
+    <!-- vertical align--line\inline block elements -->
+    <img src="../Day7/image/logo.png" alt="logo">This is the logo.
+<br>
+    <textarea name="comments" id="comments" cols="30" rows="10"></textarea>Please leave your comments here
+ <!-- Romove the white gap under the image(Since the image normally is aligned with the bottom line) -->
+    <br>
+    <div class="Remove"><img src="../Day2/Image/down.png" alt="logo" >This is the logo.</div>
+    
+</body>
+</html>

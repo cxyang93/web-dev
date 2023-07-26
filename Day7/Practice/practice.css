@@ -86,3 +86,8 @@ a {
     margin-right: 30px;
     font-size: 16px;
 } 
+
+.user .img {
+    display: inline-block;
+    vertical-align: middle;
+}

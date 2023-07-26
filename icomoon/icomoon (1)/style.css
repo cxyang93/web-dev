@@ -1,0 +1,229 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?u4g52s');
+  src:  url('fonts/icomoon.eot?u4g52s#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?u4g52s') format('truetype'),
+    url('fonts/icomoon.woff?u4g52s') format('woff'),
+    url('fonts/icomoon.svg?u4g52s#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-chevron-right2:before {
+  content: "\e91f";
+}
+.icon-chevron-left2:before {
+  content: "\e920";
+}
+.icon-chevron-down2:before {
+  content: "\e921";
+}
+.icon-chevron-up2:before {
+  content: "\e922";
+}
+.icon-chevron-right1:before {
+  content: "\e91b";
+}
+.icon-chevron-left1:before {
+  content: "\e91c";
+}
+.icon-chevron-down1:before {
+  content: "\e91d";
+}
+.icon-chevron-up1:before {
+  content: "\e91e";
+}
+.icon-chevron-thin-up:before {
+  content: "\e912";
+}
+.icon-chevron-thin-right:before {
+  content: "\e913";
+}
+.icon-chevron-thin-left:before {
+  content: "\e914";
+}
+.icon-chevron-thin-down:before {
+  content: "\e915";
+}
+.icon-chevron-right:before {
+  content: "\e917";
+}
+.icon-chevron-left:before {
+  content: "\e918";
+}
+.icon-chevron-down:before {
+  content: "\e919";
+}
+.icon-chevron-up:before {
+  content: "\e91a";
+}
+.icon-overleaf:before {
+  content: "\e90d";
+  color: #47a141;
+}
+.icon-steam:before {
+  content: "\e910";
+}
+.icon-tiktok:before {
+  content: "\e911";
+}
+.icon-earth:before {
+  content: "\e903";
+}
+.icon-location:before {
+  content: "\e904";
+}
+.icon-info:before {
+  content: "\e905";
+}
+.icon-eye:before {
+  content: "\e906";
+}
+.icon-thumbsup:before {
+  content: "\e907";
+}
+.icon-music:before {
+  content: "\e900";
+}
+.icon-feed:before {
+  content: "\e901";
+}
+.icon-home1:before {
+  content: "\e902";
+}
+.icon-earth:before {
+  content: "\e903";
+}
+.icon-location:before {
+  content: "\e904";
+}
+.icon-info:before {
+  content: "\e905";
+}
+.icon-eye:before {
+  content: "\e906";
+}
+.icon-thumbsup:before {
+  content: "\e907";
+}
+.icon-headphones:before {
+  content: "\e908";
+}
+.icon-coffee:before {
+  content: "\e909";
+}
+.icon-home:before {
+  content: "\e90a";
+}
+.icon-home3:before {
+  content: "\e90b";
+}
+.icon-eyedropper:before {
+  content: "\e90c";
+}
+.icon-images:before {
+  content: "\e90e";
+}
+.icon-camera:before {
+  content: "\e90f";
+}
+.icon-pacman:before {
+  content: "\e916";
+}
+.icon-happy:before {
+  content: "\e9df";
+}
+.icon-smile:before {
+  content: "\e9e1";
+}
+.icon-point-up:before {
+  content: "\ea03";
+}
+.icon-point-right:before {
+  content: "\ea04";
+}
+.icon-point-down:before {
+  content: "\ea05";
+}
+.icon-play2:before {
+  content: "\ea15";
+}
+.icon-pause:before {
+  content: "\ea16";
+}
+.icon-stop:before {
+  content: "\ea17";
+}
+.icon-previous:before {
+  content: "\ea18";
+}
+.icon-next:before {
+  content: "\ea19";
+}
+.icon-volume-mute2:before {
+  content: "\ea2a";
+}
+.icon-volume-increase:before {
+  content: "\ea2b";
+}
+.icon-arrow-up:before {
+  content: "\ea32";
+}
+.icon-arrow-up-right:before {
+  content: "\ea33";
+}
+.icon-arrow-right:before {
+  content: "\ea34";
+}
+.icon-arrow-down-right:before {
+  content: "\ea35";
+}
+.icon-arrow-down:before {
+  content: "\ea36";
+}
+.icon-arrow-down-left:before {
+  content: "\ea37";
+}
+.icon-arrow-left:before {
+  content: "\ea38";
+}
+.icon-arrow-up-left2:before {
+  content: "\ea39";
+}
+.icon-arrow-up2:before {
+  content: "\ea3a";
+}
+.icon-arrow-up-right2:before {
+  content: "\ea3b";
+}
+.icon-arrow-right2:before {
+  content: "\ea3c";
+}
+.icon-arrow-down-right2:before {
+  content: "\ea3d";
+}
+.icon-hangouts:before {
+  content: "\ea8e";
+}
+.icon-youtube2:before {
+  content: "\ea9e";
+}
+.icon-github:before {
+  content: "\eab0";
+}

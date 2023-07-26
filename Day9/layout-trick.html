@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul li {
+            position: relative;
+            float: left;
+            margin-left: -1px;
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+            list-style: none;
+            
+        }
+
+        /* Cursor hovers over the li, color of border changes */
+        /* Proposition1: Add relative position to the hover property if the box has not have the property */
+            /* ul li:hover {
+            position: relative;
+            border-color: orange;} */
+
+            /* Proposition2: change z-index if the box has already had position relative*/
+            ul li:hover {
+                z-index: 1;
+                border-color: orange;
+            }
+
+            div {
+                width: 300px;height: 70px;
+                margin: 200px auto;
+                border: 1px solid black;
+            }
+
+            div img {
+               float: left;
+                width: 100px;height: 70px;
+                vertical-align: middle;
+                margin-right: 10px;
+            }
+
+            div p {
+                padding-top: 15px;
+            }
+    
+            </style>
+<html lang="en">
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+
+    <br>
+
+    <div class="float">
+        <img src="../pic1.jpeg" alt="pic">
+        <p>Try the floating image with text surrounding it</p>
+    </div>
+</body>
+</html>
