@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var computer = {
+            color: 'grey',
+            weight: 2,
+            brand: 'HP',
+            model: '13-xp',
+            movie: function f1(){
+                console.log('watch movie');
+            },
+            music: function f2(){
+                console.log('Listen to the music')
+            },
+            game: function f3(){
+                console.log('Play game')
+            },
+        }
+        console.log(computer.color)
+
+        //遍历class中内容
+        console.log(computer)
+        for (i in computer){
+            console.log(computer[i]);
+        }
+
+        function Laptop(color, weight, brand, model) {
+            this.color = color,
+            this.weight = weight,
+            this.brand = brand,
+            this.model = model,
+            this.movie = function() {
+                'watch movie';
+            }
+            this.music = function() {
+                'listen to music';
+            }
+            this.game = function() {
+                'play game';
+            }
+        }
+
+        var lap1 = new Laptop('grey','2kg','HP','13XP');
+        var lap2 = new Laptop('white','2.3kg','ASUS','14XP');
+        console.log(lap1)
+        for (i in lap1){
+            console.log(lap1[i]);
+        }
+        console.log(lap2)
+        for (i in lap2){
+            console.log('Laptop2 features: ' + i +'\t' + lap2[i]);
+        }
+
+        var button = {
+            width: 100,
+            height: 200,
+            bgc: 'blue',
+            click: function(){
+                'click';
+            }
+        }
+        console.log(button)
+        for (i in button){
+            console.log('Button features: ' + i +'\t' + button[i]);
+        }
+
+
+        function Car(weight, color, brand){
+            this.weight = weight,
+            this.color = color,
+            this.brand = brand,
+            this.f1 = function(){
+                'Carry People'
+            }
+            this.f2 = function(){
+                'Load murchandise'
+            }
+            this.f3 = function(){
+                'plow land'
+            }
+        }
+
+        var car1 = new Car('2T','white','BYD');
+        for (i in car1){
+            console.log('Car1 feautres: '+ i + '\t' + car1[i])
+        }
+    </script>
+</body>
+</html>

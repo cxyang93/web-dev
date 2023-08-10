@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr = [1,2,3];
+        function calSum3(a,b,c){
+            return(a + b + c);
+        }
+        //...展开数组
+        let results = calSum3(...arr);
+        console.log(results);
+
+        const arr2 = [...arr,4, 5, 6];
+        console.log(arr2);
+        
+        //展开对象
+        const obj = {
+            name: 'Aude',
+            age: 30,
+            gender: 'Ms'
+        }
+
+        const obj2 = {...obj, address: 'France'};
+        console.log(obj2);
+
+        const obj3 = {...obj, name: 'Xavier'}; /*对象里原有元素，后面的替换前面的。
+        console.log(obj3);
+
+    </script>
+</body>
+</html>

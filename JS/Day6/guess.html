@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var ok = '';
+        while (ok!= 'Y') {
+            ok = prompt("来跟我一起玩数字猜测游戏吧！（同意请输'Y',不同意请输'N')")
+        }
+        var range = prompt('请输入您选择的数字范围：\n(例如：1-10)');
+        r = getRange(range);
+        min = parseFloat(r[0]);
+        max = parseFloat(r[1]);
+        rand_num = Random(min,max);
+        console.log(rand_num);
+        console.log(min,max);
+
+        var input = prompt('我已经想好了，请开始您的猜测');
+        var num = parseFloat(input); 
+        var min_g = min; 
+        var max_g = max;
+
+        while (num !=rand_num){            
+            if (num > rand_num){
+                if (max_g != max && num < max_g || max_g==max){
+                    max_g = num;
+                }
+                num = parseFloat(prompt('数字大了，请继续在'+ min_g +'到'+ max_g +'之间猜测'));   
+                
+            }else{
+                if (num > min_g){
+                    min_g = num;
+                }
+                num = parseFloat(prompt('数字小了，请继续在'+ num +'到'+ max_g +'之间猜测'));
+                
+            }input
+                  
+        }
+        alert('您猜对了，我想的数字就是'+ num +'。')
+         
+
+        function Random(min,max){
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        function getRange(range){
+            var i = 0;
+            while (range[i]!='-'){
+                i++;
+            }
+            var r= [];
+            r[0] = range.substr(0,i);
+            r[1]= range.slice(i+1);
+            return(r);
+        }
+
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+/* icomoon */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?3yvuyk');
+    src:  url('../fonts/icomoon.eot?3yvuyk#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?3yvuyk') format('truetype'),
+      url('../fonts/icomoon.woff?3yvuyk') format('woff'),
+      url('../fonts/icomoon.svg?3yvuyk#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+
+.nav .dropdown  .dd {
+    display: none;
+}
+
+.item_nav {/* icomoon */
+    height: 30px;
+    width: 100%;
+    line-height: 30px;
+}
+
+.item_nav ul li {
+    float: left;
+    font-size: 12px;
+    padding: 0 5px;
+}
+
+.item_nav ul li:after {
+    content:"\e91b";
+    font-family: icomoon;
+}
+
+.item_nav ul li a {
+    color: #969090;
+}
+
+.iteminfo {
+    margin: 10px;
+    height: 1200px;
+}
+.iteminfo .image {
+    float: left;
+    width: 500px;
+    height: 600px;  
+    background-color: white;
+}
+
+.iteminfo .imageP {
+    display: block;
+    margin: auto;
+    padding: 50px;
+    border: 2px solid #e5e5e5;
+}
+
+.iteminfo .imageP img {
+    padding-left: 50px;
+}
+
+
+.image ul {
+    display: block;
+    margin: 50px auto;
+    padding-left: 25px;
+}
+
+
+.image ul li {
+    float:left;
+    height: 65px;
+    width: 65px;
+    line-height: 65px;
+    text-align: center;
+}
+
+.image .moreimg ul li img {
+    height: 65px;
+    width: 65px;
+}
+
+.image ul .prev::before {
+    content: '\e920';
+    font-family: icomoon;
+    font-size: 40px;
+    height: 65px;
+    width: 65px;
+}
+
+.image ul .next::after {
+    content: '\e91f';
+    font-family: icomoon;
+    font-size: 40px;
+    height: 65px;
+    width: 65px;
+}
+
+
+
+.iteminfo .info {
+    float: left;
+    width: 650px;
+    height: 600px;
+    padding: 0 50px;
+}
+
+.info .hd p {
+    margin-top: 5px;
+    color: red;
+    font-size: 12px;
+}
+
+.info .bd .priceinfo {
+    height: 150px;
+    width: 100%;
+    background-color: pink;
+}
+
+.info .bd .priceinfo ul {
+    width: 80%;
+    height: 100%;
+}
+
+
+.info .bd .priceinfo ul li {
+   height: 40px;
+   line-height: 40px;
+    text-align: left;padding: 10px 10px;
+}
+.info .bd .priceinfo ul li span {
+    float: left;
+    padding: 0 10px;
+}
+
+.info .bd .priceinfo ul li strong {
+    font-size: 20px;
+    
+}
+.info .bd .priceinfo ul .li_2 {
+    height: 120px;
+    width: 100%;
+}
+
+/* .info .bd .priceinfo ul .li_2 span {
+    display: inline-block;
+    padding: 0 10px;
+} */
+
+.info .bd .priceinfo ul .li_2 span{
+    display: block;
+    float: left;
+}

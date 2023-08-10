@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var date = new Date();
+        var year = date.getFullYear();
+        var month = date.getMonth()+1;
+        var date1 = date.getDate(); 
+        var day = date.getDay();
+        var arr_day = [];
+        var Hours = date.getHours();
+        var minutes = date.getMinutes();
+        var second = date.getSeconds();
+        var nowTime = date.getTime();
+
+        get_time()
+        function get_time(){
+            var hours = date.getHours();
+            var minutes = date.getMinutes();
+            var second = date.getSeconds();
+            hours = hours <10 ? '0'+ hours:hours;
+            minutes = minutes < 10? '0' + minutes : minutes;
+            second = second < 10? '0' + second : second;
+            timestr = hours +':'+ minutes + ':' + second; 
+            console.log(timestr);
+            return timestr;
+        }
+
+        arr_day =[ 'Dim','Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'];
+        console.log(date.getDay())
+        var day = arr_day[date.getDay()];
+        console.log(date1);
+        console.log(month);
+        console.log(date.getDay());
+        console.log(arr_day[date.getDay()]);
+
+        countdown('2023-8-2 17:30:00');
+        console.log(countdown('2023-8-2 17:30:00'))
+
+        function countdown(time){
+            var timenow = date.valueOf();
+            var Settime = new Date(time);
+            console.log(Settime) 
+            console.log(timenow);
+            console.log(Settime.valueOf());
+            second_rest = (Settime.valueOf()-timenow)/1000;
+            Days = parseInt(second_rest/60/60/24);
+            Hours = parseInt(second_rest/60/60%24);
+            minutes = parseInt(second_rest/60%60);
+            second = parseInt(second_rest%60);
+            return Days +'D'+ Hours + 'H' + minutes + 'm' + second + 's';
+        }
+    </script>
+</body>
+</html>

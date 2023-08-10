@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var input='';
+        while (input !== '5'){
+            var results = 0
+            input = prompt('欢迎使用简易计算器:\n1.加法运算\n2.减法运算\n3.乘法运算\n4.除法运算\n5.退出\n请输入您的选择')
+            switch (input) {
+                case '1':
+                    num = getNum();
+                    results = num[0] + num[1];
+                    alert('计算结果为'+ results + '。')
+                    break;
+                case '2':
+                    num = getNum();
+                    results = num[0] - num[1];
+                    alert('计算结果为'+ results + '。')
+                    break;
+                case '3':
+                    num = getNum();
+                    results = num[0] * num[1];
+                    alert('计算结果为'+ results + '。')
+                    break;
+                case '4':
+                    num = getNum()
+                    results = num[0] / num[1];
+                    alert('计算结果为'+ results + '。')
+                    break;
+                case '5':
+                    results = 0;
+            }
+        }
+
+    function getNum(){
+        var num = [];
+        var i = 0;
+        while (num.length!=2){
+            num[num.length] = parseFloat(prompt('请输入一个数值'));
+        }
+        return num;
+    }
+    </script>
+</body>
+</html>

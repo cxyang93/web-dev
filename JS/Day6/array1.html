@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [1,30,25,34,0];
+        //是否是数组？
+        console.log(arr instanceof Array);
+        console.log(Array.isArray(arr));//isArray是Array对象中的一个动作。调用方式为function的方式。
+
+
+        //在数组后面加元素,返回的是新数组长度
+        console.log(arr.push('pink'));
+        //在数组后前面加元素,arr.unshift()返回的是新数组长度
+        console.log(arr.unshift('red'));
+        console.log(arr);
+        //从数组最后删除元素,返回删除的元素
+        console.log(arr.pop());
+        console.log(arr);
+        //从数组最前面删除元素,返回删除的元素
+        console.log(arr.shift());
+        console.log(arr);
+        
+        //元素的索引号
+        var pick = arr.indexOf(30);
+        console.log(pick)
+        //删除某个元素(ex.删除arr中的25);
+        var NewArray = [];
+        for (i = 0; i < arr.length; i++){
+            if (i != arr.indexOf(25)){
+                NewArray.push(arr[i]);
+           }
+        }
+        console.log(NewArray)
+
+    </script>
+</body>
+</html>

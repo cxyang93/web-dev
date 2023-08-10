@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var age = prompt("Enter your age");
+        alert('您的年龄是'+age+'岁。');
+        age1=26;
+        //三种num转string的方法
+        console.log(age1);
+        console.log('num转string方法1 String(age1)');
+        console.log(String(age1));
+        console.log('num转string方法2 age1.toString()');
+        console.log(age1.toString());
+        console.log('num转string方法3 age1+""');
+        console.log(age1+'');
+
+        //string转num的方法
+        console.log('输入string转num的方法1 parseInt(age),向下取整数，去掉单位，必须数字开头');
+        console.log(parseInt(age));//向下取整数，去掉单位，必须数字开头
+        
+        console.log('输入string转num的方法1 parseFloat(age),保留小数点后面的数，必须数字开头');
+        console.log(parseFloat('3.459'));//保留小数点后面的数，必须数字开头
+        
+        console.log("string转num的方法3 Number('3.459')");
+        console.log(Number('3.459'));
+        console.log("string转num的方法4 隐式转换 '12'- 0");
+        console.log('12'- 0);//隐式转换
+        console.log("隐式转换 '123'- '120'");
+        console.log('123'- '120')
+        console.log("隐式转换 '123'*1 ");
+        console.log('123'*1);
+
+        var Thisyear = 2023;
+        var Birthyear = prompt('请输入您的出生年份');
+        age = Thisyear - Birthyear;//减法操作，隐式转换
+        alert('您的年龄是'+ age +'岁。');
+
+    </script>
+</body>
+</html>

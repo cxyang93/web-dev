@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- 开始开发 -->
+    <!-- 注意事项:使用jsx并希望script中的代码被解析,必须在script标签中添加一个属性 -->
+
+    <script type="text/babel">
+        class App extends React.Component{
+            render() {
+                return <div>
+                    <h2>Hello world</h2>
+                    <button>改变文本</button>
+                    </div>
+            }
+        }
+        ReactDOM.render(<App/>, document.getElementById("app"))
+
+    </script>
+</body>
+</html>

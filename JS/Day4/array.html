@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = ['red','green','blue','pink'];
+        str = '';
+        for (var i = 0; i < arr.length; i++) {
+            str += arr[i] + '|';
+        }
+        console.log(str);
+
+        var num = 10;
+        var arr = [];
+        for (i = 1; i <= num; i++){
+            arr[i-1] = i;
+        }
+        console.log(arr);
+
+        var arr = [2,0,6,1,77,0,52,0,25,7];
+        console.log(arr)
+        var newarr = [];
+        for (i = 0; i < arr.length; i++){
+            if (arr[i] >= 10){
+                newarr[newarr.length] = arr[i];
+            }
+        }
+        console.log(newarr)
+
+        var newarr2=[];
+        for(i = 0; i < arr.length; i++){
+            if (arr[i]==0){
+                continue;
+            }
+            newarr2[newarr2.length] = arr[i];
+        }
+        console.log(newarr2)
+
+        var arrColor = ['red', 'green','blue','purple','pink'];
+        console.log(arrColor);
+        //console.log(arrColor.length-1);
+        var newArrColor = [];
+        // console.log(newArrColor.length);
+        for (i = arrColor.length-1; i >= 0; i--){
+            // console.log(i);
+            newArrColor[newArrColor.length] = arrColor[i];
+        } 
+        console.log(newArrColor);
+    </script>
+</body>
+</html>

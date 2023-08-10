@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var age = prompt('Please enter your age');
+        // if (age >= 18) {
+        //     alert('You are an adult');
+        // } 
+        // else {
+        //     alert('You are a child');
+        // }
+
+        // var year = prompt('请输入年份');
+        // if (year%4==0 && year%100!=0 || year%400==0) {
+        //     alert(year +'是闰年');
+        // }
+        // else {
+        //     alert(year +'是平年');
+        // }
+
+        var score = prompt('请输入分数');
+        if (score>=90) {
+            alert('A');
+        }else if (score < 90 && score >= 80) {
+            alert('B');
+        }else if (score < 80 && score >= 70) {
+            alert('C');
+        }else if (score>=60 && score<70) {
+            alert('D')
+        
+        }else if (score<60 && score>=0) {    
+            alert('E');
+
+        }else if (typeof parseFloat(score) != 'number' ) {
+            alert('输入错误');
+        }
+        console.log(typeof parseFloat('&é"'));
+        
+    </script>
+</body>
+</html>

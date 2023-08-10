@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //浮点数加减乘除会有问题，因为浮点数的精度问题，不能用浮点数作比较
+        //递增
+        var num = 1;
+        ++num;//前置递增
+        console.log(num);
+        var age = 10;
+        age++;//后置递增
+        console.log(age);
+        var p = 10;
+        console.log('先返回值再递增 p=10 计算p++ + 10');
+        console.log(p++ + 10);
+    </script>
+</body>
+</html>

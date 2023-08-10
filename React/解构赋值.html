@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = ['Aude','Xavier','Quentin'];
+        const [a,b,c] = arr;
+        console.log(a,b,c);
+
+        function fn(){
+            return(['Robin','Quintin']);
+        }
+        const [e,f] = fn();
+        console.log(e,f);
+
+        let arr1 = ['Aude','Xavier','Quentin','Robin','Quintin'];
+        const [g,h,...j]= arr1 ;
+        console.log('g='+g,'h='+h,'j='+j);
+
+        // 对对象解构：
+        const obj = {
+            name: 'Aude',
+            age: 30,
+            gender: 'Ms'
+        }
+        let k,l,m;
+        ({name: k, age: l, gender: m}=obj)
+        console.log(k,l,m)
+
+        const {name, age, gender}=obj;/*对象名和变量名一致，只写一个*/
+        console.log(name, age, gender);
+
+        //利用数组的解构交换元素位置
+        const arr2 = [3,1,2];
+        [arr2[1], arr2[2]] = [arr2[2], arr2[1]];
+        console.log(arr2);
+
+    </script>
+</body>
+</html>

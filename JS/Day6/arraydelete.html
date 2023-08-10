@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // var arr = alphDelete('a','b','c','b','c','b','a','d');
+        // console.log(arr);
+
+        // function alphDelete(){
+        //     var arr = [];
+            
+        //     for (i = 0; i < arguments.length; i++){
+        //         console.log(arr.length)
+        //         var j = 0;
+        //         arr.push(arguments[i]);
+        //         while (j < arr.length-1){
+        //             if (arguments[i] == arr[j]){
+        //                 console.log(arguments[i] == arr[j])
+        //                 arr.pop();
+        //                 console.log(arr)
+        //             }   
+        //             j++;
+        //             // console.log(j);
+        //         }    
+        //         // console.log(arr)
+        //     }
+        //     return arr;
+        // }
+
+        var arr = unique('a','b','c','b','c','b','a','d')
+        console.log(arr)
+
+        function unique(){
+            var arr = [];
+            for (i = 0; i < arguments.length; i++){
+                // 利用arr.indexOf()查询元素在数组中的位置.若有,不添加.若没有,添加.
+                console.log(arr.indexOf(arguments[i]));
+                if (arr.indexOf(arguments[i]) == -1){
+                    arr.push(arguments[i]);
+                }
+            }
+            return arr;
+        }
+
+        // 返回字符串中'o'的索引号及出现此处
+        var str = 'abcoefoxyzzopp';
+        var index = str.indexOf('o');
+        var pos = [];
+        var j = 0;
+        while(index != -1){
+            console.log(index);
+            pos[j] = index;
+            j++;
+            index = str.indexOf('o', index + 1);
+        }
+        console.log(pos);
+
+        // 根据位置返回字符 
+        // 1. charAt(index)
+        var str = 'andy';
+        console.log(str.charAt(2));
+        // 2. charCodeAt(index)返回ASCII值
+        console.log(str.charCodeAt(0));
+        // 3. str[index]
+
+        // 统计出现最多.
+        // 用object的属性查找做 o['x'];o是object,x是查找的字符.
+        var str = 'abcoefoxyzzopp';
+        var o = new Object;
+        for (i = 0; i < str.length; i++){
+            var chars = str.charAt(i);
+            if(o[chars]){
+                o[chars]++;
+            }else {
+                o[chars] = 1;
+            }
+        }
+        console.log(o);
+        // 遍历object里的对象;o[k]为数值,k为属性名
+        var charM = {};
+        max = 0;
+        for (var k in o){
+            if (o[k] > max){
+                charM.value = k;
+                max = o[k];  
+            }
+            charM.times = max;
+        }
+        console.log(charM);
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var sum = 0; 
+        var op = '';
+        var amount = 0;
+        while (op!='4'){
+            var op = prompt('请输入您要的操作：\n1.存钱\n2.取钱\n3.显示余额\n4.退出')
+            //console.log(op);
+            switch (op) {
+                case '1':
+                    amount = prompt('请输入存入的金额');
+                    sum += parseFloat(amount);  
+                    alert('您现在的存款为'+ sum + '元');                
+                    break;
+                case '2':
+                    amount = prompt('请输入取出的金额');
+                    sum -= amount;
+                    alert('您现在的存款为'+ sum + '元'); 
+                    //console.log(amount);
+                    break;
+                case '3':
+                    alert('您账户中的余额为：'+ sum + '元');
+                    break;
+                case '4' :
+                    amount = 0;
+                    alert('您正在退出。')
+                                 
+            }
+            console.log(amount);
+        }
+    </script>
+</body>
+</html>
